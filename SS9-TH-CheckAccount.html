@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+    function checkAcount(str) {
+        let regexp = /^[a-z0-9_]{6}$/;
+        return regexp.test(str)
+    }
+    let str = prompt("Input Account");
+    let result = checkAcount(str);
+    if(result===true){
+        alert("Account Invalid")
+    }else {alert("Account UnInvalid")}
+</script>
+</body>
+</html>
